@@ -1,0 +1,838 @@
+@media screen and (min-width: 575px) {
+
+    .desktop-only{
+        display:block;
+    }
+
+    .mobile-only{
+        display:none;
+    }
+
+    /* Estil del menú */
+    nav ul {
+        list-style: none;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+    }
+    
+    /*ESTIL BOTONS MENÚ*/
+    .ov-btn-grow-box {
+        background: #fff;
+        color:#006633;
+        padding: 16px 20px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: inline-block;
+      }
+      .ov-btn-grow-box:hover {
+        color:#ffed00;
+      }
+      .ov-btn-grow-box::after {
+        content: "";
+        background:#006633;
+        position: absolute;
+        z-index: -1;
+        padding: 16px 20px;
+        display: block;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform: scale(0, 0);
+        transition: all 0.3s ease;
+      }
+      .ov-btn-grow-box:hover::after {
+        transition: all 0.3s ease-out;
+        transform: scale(1, 1);
+      }
+    
+    /*Estil imatge portada*/
+    
+    .portada {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .portada img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    /*Estil primera secció: caixes*/
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .main-section {
+        display: flex;
+        width: 100%;
+    }
+    
+    .left-box {
+        flex-basis: 75%;
+        background-color: rgba(255, 237, 0, 0.4);
+        padding: 20px;
+    }
+    
+    .right-box {
+        flex-basis: 25%;
+        background-color: #006633;
+        padding: 20px;
+    }
+    
+    .subdivision {
+        margin-bottom: 20px;
+    }
+    
+    
+    .content {
+        margin-bottom: 20px;
+    }
+    
+    .highlighted-text {
+        color: #ffed00;
+    }
+    
+    .subtext {
+        font-size: 20px;;
+    }
+    
+    .subtext2 {
+        font-size: 15px;;
+        text-align: center;
+        color:#ffed00 ;
+    }
+    
+    .login-form h3 {
+        margin-top: 0;
+    }
+    
+    .form-group {
+        margin-bottom: 10px;
+    }
+    
+    label {
+        display: block;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    button[type="submit"] {
+        padding: 10px 20px;
+        background-color: #ffed00;
+        color: #000;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button[type="soci"] {
+        padding: 10px 20px;
+        background-color: #ffed00;
+        color: #006633;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 10px;  
+    }
+    
+    /* Estil de la secció "Com funciona l'Horta del Barri" */
+    .com-funciona {
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .com-funciona h2{
+        font-size: 40px;
+        color: #006633;
+    }
+    
+    .taula {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .taula h3{
+        color: #006633;
+        font-size: 24px;
+        background-color:  rgba(255, 237, 0, 0.4);
+        margin: 10px;
+    }
+    
+    .columna {
+        width: 30%;
+    }
+    
+    /*Estil imatge fruita*/
+    
+    .fruita {
+        background-image: url("images/fruita.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .textfruita {
+        text-align: center;
+        color: #ffed00;
+        background-color: #006633;
+        padding: 10px 20px;
+    }
+    
+    .fruita h2 {
+        font-size: 32px;
+    }
+    
+    button[type="botofruita"] {
+        padding: 10px 20px;
+        background-color: #ffed00;
+        color: #006633;
+        border: none;
+        cursor: pointer;
+    }
+    
+    
+    
+    /* Estil de la secció "Contacta" */
+    .contacta {
+        text-align: center;
+        background-color:rgba(255, 237, 0, 0.4) ;
+    }
+    
+    .contacta h2{
+        font-size: 40px;
+        text-align: center;
+        color: #006633 ;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    form div {
+        margin-bottom: 10px;
+    }
+    
+    label {
+        display: block;
+    }
+    
+    input,
+    textarea {
+        width: 300px;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    button[type="submit"] {
+        padding: 10px 20px;
+        background-color: #ffed00;
+        color: #006633;
+        border: none;
+        cursor: pointer;
+    }
+    
+    /* Estil del peu de pàgina */
+    footer {
+        text-align: center;
+        background-color: rgba(255, 237, 0, 0.4);
+        margin-top: 20px;
+        color: #006633;
+    }
+    
+    .logotip {
+        height: 20px;
+        width: 20px;
+        overflow: hidden;
+    }
+    
+    .logotip img {
+        height: 20px;
+        width: 20px;
+        object-fit: cover;
+    }
+    /*FI TEXT.HTML*/
+    
+    /*INICI VULL SER MEMBRE*/
+    
+    .titolportada{
+        text-align: center;
+    }
+    
+    .titolportada h1{
+        color: #006633;
+        font-size: 50px;
+    }
+    
+    .main-section h2{
+        background-color: #006633;
+        text-align: center;
+        color: #ffed00;
+        padding: 15px;
+    }
+    
+    .imatgeformulari {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .imatgeformulari img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    /*Formulari*/
+    
+    .formulari {
+        text-align: center;
+        background-color:  rgba(255, 237, 0, 0.4);
+        margin-bottom: 10px;
+    }
+    
+    .formulari h2{
+        font-size: 40px;
+        background-color: #006633;
+        color: #ffed00;
+        margin: 10px;
+    }
+    
+    .taulaformulari {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .taulaformulari h3{
+        color: #006633;
+        font-size: 24px;
+        margin: 10px;
+    }
+    
+    .columna {
+        width: 30%;
+    }
+    
+    /*FI VULL SER MEMBRE*/
+    
+    /*INICI QUI SOM*/
+    
+    .titolquisom{
+        text-align: center;
+        margin: 0;
+    }
+    
+    .titolquisom h1{
+        color: #ffed00;
+        background-color: #006633;
+        font-size: 50px;    
+        margin-left: 170px;
+        margin-right: 170px;
+    }
+    
+    .titolquisom h2{
+        color: #006633;
+        background-color: rgba(0, 102, 51, 0.4);
+        font-size: 30px;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    
+    .principalquisom{
+        background-color:rgba(255, 237, 0, 0.4);
+        max-width: max-content;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .textquisom1{
+        text-align: left;
+        margin: 50px;
+    }
+    
+    .textquisom2{
+        text-align: right;
+        margin: 50px;
+    }
+    
+    .textquisom1 h2{
+        background-color: #006633;
+        color: #ffed00;
+    }
+    
+    .textquisom2 h2{
+        background-color: #006633;
+        color: #ffed00;
+    }
+    
+    .textquisom1 img{
+        height: 40%;
+        width: 40%;
+        object-fit: cover;
+    }
+    
+    .textquisom2 img{
+        height: 40%;
+        width: 40%;
+        object-fit: cover;
+    }
+    
+    /*COLUMNA QUI SOM*/
+    
+    .columnaquisom {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .columnaquisom h2{
+        font-size: 40px;
+        color: #006633;
+    }
+    
+    .taulaquisom {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .columna1 {
+        width: 30%;
+    }
+    .columna2 {
+        width: 30%;
+    }
+    .columna3 {
+        width: 30%;
+    }
+    
+    /*FI QUI SOM*/
+    
+    /*INICI BOTIGA*/
+    
+    .titolbotiga{
+        margin: 20px;
+    }
+    
+    .columnasecciobotiga {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .columnasecciobotiga h2{
+        font-size: 20px;
+    }
+    
+    .taulabotiga {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .columnabotiga {
+        width: 20%;
+    }
+    /*ESTIL BOTÓ SLIDE LEFT*/
+    .ov-btn-slide-left {
+        background: rgba(255, 237, 0, 0.4);
+        color: #006633;
+        border: 1px solid #006633;
+        padding: 16px 20px;
+        border-radius: 5px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: inline-block;
+      }
+    
+      .ov-btn-slide-left:hover {
+        color:#ffed00;
+      }
+      .ov-btn-slide-left::after {
+        content: "";
+        background: #006633;
+        position: absolute;
+        z-index: -1;
+        padding: 16px 20px;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        right: 100%;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+      .ov-btn-slide-left:hover::after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+      
+    .cercaform{
+        color: #006633;
+    }
+    }
+    @media screen and (max-width: 575px) {
+
+        .desktop-only{
+            display:none;
+        }
+    
+        .mobile-only{
+            display:block;
+        }
+
+        /*Estil menú*/
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 10px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        /*Botons menú*/
+
+        .ov-btn-grow-box {
+            background: #fff;
+            color:#006633;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            display: inline-block;
+          }
+          .ov-btn-grow-box:hover {
+            color:#ffed00;
+          }
+          .ov-btn-grow-box::after {
+            content: "";
+            background:#006633;
+            position: absolute;
+            z-index: -1;
+            display: block;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            transform: scale(0, 0);
+            transition: all 0.3s ease;
+          }
+          .ov-btn-grow-box:hover::after {
+            transition: all 0.3s ease-out;
+            transform: scale(1, 1);
+          }
+
+/*Estil primera secció: caixes*/
+    
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.main-section {
+    display: flex;
+    width: 100%;
+}
+
+.left-box {
+    flex-basis: 75%;
+    background-color: rgba(255, 237, 0, 0.4);
+    padding: 20px;
+}
+
+.right-box {
+    flex-basis: 25%;
+    background-color: #006633;
+    padding: 20px;
+}
+
+.subdivision {
+    margin-bottom: 20px;
+}
+
+
+.content {
+    margin-bottom: 20px;
+}
+
+.highlighted-text {
+    color: #ffed00;
+}
+
+.subtext {
+    font-size: 20px;;
+}
+
+.subtext2 {
+    font-size: 15px;;
+    text-align: center;
+    color:#ffed00 ;
+}
+
+.login-form h3 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ffed00;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="soci"] {
+    padding: 10px 20px;
+    background-color: #ffed00;
+    color: #006633;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;  
+}
+
+/*Estil com funciona*/
+
+.com-funciona h2{
+    font-size: 20px;
+    text-align: center;
+    color: #006633;
+
+}
+
+.columna h3{
+    color: #006633;
+    background-color:  rgba(255, 237, 0, 0.4);
+}
+
+/*Menja com penses*/
+
+.fruita {
+    background-image: url("images/fruita.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textfruita {
+    text-align: center;
+    color: #ffed00;
+    background-color: #006633;
+    padding: 10px 20px;
+}
+
+.fruita h2 {
+    font-size: 32px;
+}
+
+button[type="botofruita"] {
+    padding: 10px 20px;
+    background-color: #ffed00;
+    color: #006633;
+    border: none;
+    cursor: pointer;
+}
+
+ /* Estil de la secció "Contacta" */
+ .contacta {
+    text-align: center;
+    background-color:rgba(255, 237, 0, 0.4) ;
+}
+
+.contacta h2{
+    font-size: 40px;
+    text-align: center;
+    color: #006633 ;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+}
+
+input,
+textarea {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ffed00;
+    color: #006633;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estil del peu de pàgina */
+footer {
+    text-align: center;
+    background-color: rgba(255, 237, 0, 0.4);
+    margin-top: 20px;
+    color: #006633;
+}
+
+.logotip {
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+}
+
+.logotip img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+/*FI VERSIÓ MÓBIL INICI*/
+
+/*QUI SOM*/
+
+.titolquisom{
+    text-align: center;
+    margin: 0;
+}
+
+.titolquisom h1{
+    color: #ffed00;
+    background-color: #006633;
+    font-size: 15px;    
+    margin-left: 170px;
+    margin-right: 170px;
+}
+
+.titolquisom h2{
+    color: #006633;
+    background-color: rgba(0, 102, 51, 0.4);
+    font-size: 10px;
+    text-align: center;
+}
+.principalquisom{
+    background-color:rgba(255, 237, 0, 0.4);
+    max-width: max-content;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.textquisom1{
+    text-align: left;
+    margin: 50px;
+}
+
+.textquisom2{
+    text-align: right;
+    margin: 50px;
+}
+
+.textquisom1 h2{
+    background-color: #006633;
+    color: #ffed00;
+}
+
+.textquisom2 h2{
+    background-color: #006633;
+    color: #ffed00;
+}
+
+.textquisom1 img{
+    height: 40%;
+    width: 40%;
+    object-fit: cover;
+}
+
+.textquisom2 img{
+    height: 40%;
+    width: 40%;
+    object-fit: cover;
+}
+
+.columna1 h2 {
+   color: #006633;
+   font-size: 25px;
+   text-align: center;
+}
+.columna2 h2 {
+    color: #006633;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+}
+      
